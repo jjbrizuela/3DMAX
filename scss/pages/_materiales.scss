@@ -1,0 +1,29 @@
+section article h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+section article img{
+    width: 200px;
+    height: 80px;
+}    
+.cotainer-materiales_mat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-materiales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+    }
+    @include desktop{
+        grid-template-columns: repeat(3,30%);
+    }
+  }

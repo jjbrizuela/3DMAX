@@ -1,0 +1,12 @@
+.container-inico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+    }
+  }
